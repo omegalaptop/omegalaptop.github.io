@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+:root{
+    --primary-color:#3f51b5;
+    --secondary-color: #111518;
+    --light-color: #ddd;
+    --white_color: #fff;
+    --gray: #b3b6b7;
+    --light_dark: #181c1f;
+
+}
+
+html {
+    font-size: 80%;
+    scroll-behavior: smooth;                /* i added this for click and scroll response*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/*--------------utility classes start -----------*/
+body {
+    background: var(--light-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.primary_btn {
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin: 1rem 0;
+}
+
+
+.primary_btn:hover {
+    background: var(--primary-color);
+    color: var(--white_color);
+   
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+
+/*--------------utility classes stop -----------*/
+
+
+
+/*--------------header start -----------*/
+header {
+    background: url('/images/bg_img.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+header img{                
+    width: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.navbar nav{
+    display: flex;
+}
+.navbar nav li {
+    list-style: none;
+    margin-right: 1.5rem;
+}
+.navbar nav li a {
+    color: var(--gray);
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+    transition: all .4rem ease-in-out;
+    text-decoration: none;
+}
+
+.navbar nav li a:hover {
+    color: var(--white_color);
+}
+
+.navbar .btn {
+    color: white;                        /*changed from var gray*/
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/*--------------showcase start-----------*/
+#showcase .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 80vh;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+#showcase .showcase-content {
+    color: var(--white_color);
+    width: 100%;
+}
+#showcase p {
+    font-size: 1.4rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+#showcase h2 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+/*--------------showcase close-----------*/
+
+
+
+
+/*--------------services start-----------*/
+#services {
+    background: rgba(17, 145,243, 0.4);
+    border-radius: 10px;
+    margin-top: -5%;
+}
+
+
+#services .services_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+#services .icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon i{
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--white_color);
+}
+
+#services .content {
+    color: var(--white_color);
+    font-size: 0.9rem;
+}
+
+#services .content p{
+    color: var(--gray);                          /*will change to personal black later*/
+}
+
+/*--------------services close-----------*/
+
+/*--------------header close-----------*/
+
+
+/*--------------Gallery start-----------*/
+#gallery {
+    padding: 10rem 0;
+}
+
+.gallery_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: -30px;                /*i added margin bottom */
+}
+
+.gallery_content h2 {
+    font-size: 2rem;
+
+}
+
+.gallery_content .num{
+    font-size: 1.5rem;
+    color: var(--gray);
+    padding: 1.5rem 0;
+}
+
+.gal_left_side {
+    background:  var(--white_color);
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.gal_left_side:hover {
+    background: #f39c12;
+    color: var(--white_color);
+}
+
+.gal_left_side img {
+    display: block;
+    object-fit: cover;
+    transform: translateY(25%);
+}
+
+.gal_right_side {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 2rem;                                  /*i changed the grid gap from 4 to 2*/
+    }
+    
+.gal_right_side .gallerys {
+    background: var(--white_color);
+    padding: 4rem;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+    
+
+}    
+.gal_right_side .gallerys:first-child{
+   transition: all .5s ease-in-out;
+     grid-column: 1/3;
+   
+}
+
+.gal_right_side .gallerys:first-child:hover {
+    background: #3f51b5;
+    color: var(--white_color);
+}
+
+.gal_right_side .gallerys:nth-child(2):hover{
+    background: #138d75;
+    color: #fff;
+}
+.gal_right_side .gallerys:nth-child(3):hover{
+    background: #881c57;
+    color: #fff;
+}
+
+.gal_right_side img {
+    width: 100%;
+    margin: 0 auto;
+}
+/*--------------Gallery close-----------*/
+
+
+
+/*--- boxes with content start --*/
+#box-normal_content{
+    padding: 2rem 0;
+}
+.normal_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.normal_content_boxes {
+    padding: 2rem;                              /*i chnaged the padding*/
+    background: var(--white_color);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.normal_content_boxes h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;                        /*i changed the margin*/
+}
+.normal_content_boxes p {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.normal_content_boxes:hover {
+    background: var(--primary-color);
+    color: var(--white_color);
+}
+/*--- boxes with content close --*/
+
+
+/*--- Oculus start --*/
+#oculus {
+    padding: 6rem 0;                /*i changed padding*/
+}
+
+
+/*learn how to include gradients on backgrounds*/
+.oculus_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    align-items: center;
+    background: linear-gradient(to right, #3f51b5, rgb(0,0,0));   
+    grid-gap: 2.5rem;  
+}
+
+#oculus .oculus_content {
+    padding: 6rem;
+}
+
+#oculus .oculus_content img {
+    display: block;
+    width: 110%;
+    /*I changed the width*/
+}
+
+#oculus .oculus_content h2 {
+    font-size: 4.5rem;
+    color: var(--white_color);
+    font-weight: 800;
+}
+
+#oculus .oculus_content p {
+    font-size: 1.5rem;
+    color: var(--white_color);
+    padding: 2rem 0;
+}
+/*--- Oculus close --*/
+
+
+
+/*--- products starts --*/
+#featured_products {
+    padding: 4rem 0;
+}
+
+.outside_content {
+    display: flex;
+    justify-content: space-between;
+}
+.outside_content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.outside_content p {
+    font-size: 1.2rem;
+}
+
+.products_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pro_box {
+    border: 1px solid var(--gray);
+    
+}
+.pro_box img{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.pro_box h2{
+  color: var(--primary-color);
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+}
+.pro_box .price{
+   margin-top: 1rem;
+   font-size: 1.5rem;
+   padding-left: 2rem;
+}
+.pro_box .cat {
+    margin-left: 2rem;
+}
+
+
+.pro_box img:hover{
+   transform: scale(0.9);
+}
+.pro_box button {
+    display: block;
+    margin-left: 1rem;
+}
+/*--- products close --*/
+
+
+
+
+/*--- ipad pro start --*/
+#ipad_pro{
+    padding: 10rem 0;
+    background: var(--secondary-color);
+    margin-top: 5rem;
+}
+
+.ipad_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    color: var(--white_color);
+}
+
+.ipad_content img {
+    display: block;
+    width: 110%;                          /*changed image size*/
+    object-fit: cover;
+}
+
+.ipad_left_side p{
+    font-size: 2rem;
+}
+
+.ipad_left_side h2{
+    font-size: 6rem;
+}
+/*--- ipad pro close --*/
+
+
+
+/*--- special offer start --*/
+#special_offer {
+    padding: 10rem 0;
+}
+
+.sp_boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.box-1 {
+    padding: 4rem;
+    border: 1px solid var(--white_color);
+    transition: all .5s ease-in-out;
+}
+
+.box-1 h2{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.box-1 p{
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+.sp_boxes i {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.box-1:hover{
+    background: var(--white_color);
+    border: none;
+}
+
+.box-1:hover i{
+    color: var(--white_color);
+    background: var(--light_dark);
+}
+
+/*--- special offer close --*/
+
+
+
+/*--- Order Now start --*/
+.order .row {
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: .5rem;
+}
+
+.head-row {
+    font-size: 3rem;
+}
+
+.order .row .imagee {
+    flex: 1 1 30rem;
+}
+
+.order .row .imagee img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+}
+
+.order .row .imagee img:hover{
+    transform: scale(0.9);
+ }
+
+.order .row  form {
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+
+.order .row  form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.order .row  form .inputBox input, .order .row  form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    width: 49%;
+}
+
+.order .row  form textarea {
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+/*--- Order Now close --*/
+
+
+
+
+/*--- Footer starts --*/
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+  
+}
+
+
+.footer .container .boxd h3{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light_dark);
+}
+
+.footer .container .boxd a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1rem;
+    color: var(--white_color);
+}
+.footer .container .boxd a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 1.2rem;
+    color: var(--light_dark);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span {
+    color: #138d75;
+}
+
+
+
+
+
+/*--- Footer close --*/
+
+
