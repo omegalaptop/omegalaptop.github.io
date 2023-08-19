@@ -191,6 +191,14 @@
         
     }
 
+    .close_btn {
+        position: absolute;
+        top: 0;
+        left: 75%;                       /*changed to 80%*/
+        margin: 25px;
+        color: white;                /*added color black*/
+    }
+
 }
 
 
