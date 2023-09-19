@@ -55,7 +55,7 @@
     .close_btn {
         position: absolute;
         top: 0;
-        left: 70%;
+        left: 80%;
         margin: 25px;
         color: white;                /*added color black*/
     }
@@ -176,6 +176,19 @@
         grid-template-columns: repeat(1, 1fr);       
     }
 
+    #oculus .oculus_content h2{
+        font-size: 4rem;
+    }
+
+    #oculus .oculus_content img{
+        width: 200%;
+        margin: 0 -50%;
+    }
+
+    #oculus .oculus_content p {
+        padding: 0.5rem 0;
+    }
+
     .products_content {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -183,6 +196,15 @@
     .ipad_content {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .ipad_content img{
+        margin: 0 -5%;
+    }
+
+    .ipad_left_side h2{
+        font-size: 5rem;
+    }
+
     .sp_boxes {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -193,9 +215,30 @@
     .close_btn {
         position: absolute;
         top: 0;
-        left: 70%;
+        left: 80%;
         margin: 25px;
         color: white;                /*added color black*/
+    }
+
+
+    .footer {
+        padding: 5rem 0;
+        margin-top: 5rem;
+    
+    }
+
+    .footer .logo_{
+        width: 43%;
+        margin: 0 28%;
+    }
+
+
+    .footer .share i{
+        font-size: 2rem;
+    }
+
+    .footer P {
+        font-size: 1rem;
     }
 
 }

@@ -110,7 +110,7 @@ header img{
 
 
 
-/*--------------showcase start-----------*/
+/*--------------HEADER/showcase start-----------*/
 #showcase .content {
     display: grid;
     grid-template-columns: 1fr;
@@ -133,12 +133,12 @@ header img{
     font-size: 6rem;
     font-weight: 800;
 }
-/*--------------showcase close-----------*/
+/*--------------HEADER/showcase close-----------*/
 
 
 
 
-/*--------------services start-----------*/
+/*--------------HEADER/services start-----------*/
 #services {
     background: rgba(17, 145,243, 0.4);
     border-radius: 10px;
@@ -172,7 +172,7 @@ header img{
     color: var(--gray);                          /*will change to personal black later*/
 }
 
-/*--------------services close-----------*/
+/*--------------HEADER/services close-----------*/
 
 /*--------------header close-----------*/
 
@@ -486,10 +486,11 @@ header img{
     flex-wrap: wrap;
     gap: 1.5rem;
     border-radius: .5rem;
+    margin: 3rem 0;
 }
 
 .head-row {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .order .row .imagee {
@@ -509,7 +510,7 @@ header img{
  }
 
 .order .row  form {
-    flex: 1 1 50rem;
+    flex: 1 1 30rem;
     padding: 1rem;
 }
 
@@ -540,9 +541,80 @@ header img{
 
 
 
+
+/*--- Footer starts --*/
+.footer {
+    padding: 2rem 0;
+    margin-top: 5rem;
+    text-align: center;
+    display: block;
+    background: var(--secondary-color);
+
+}
+
+.footer .logo_{
+    width: 14%;
+    align-items: center;
+    margin: 0 43%;
+    padding: 2.5rem 0;
+    transition: all .5s ease-in-out;
+}
+
+.footer .logo_:hover{
+    transform: scale(1.2);
+}
+
+.footer .share {
+    display: flex;
+    gap: 1.5rem;
+    justify-content:  center;
+    flex-wrap: wrap;
+}
+
+.footer .share i{
+    font-size: 2rem;
+    color: #c03740;
+    transition: all .5s ease-in-out;
+}
+
+.footer .share i:hover{
+    color: #81d4ee;
+    transform: scale(1.2);
+}
+
+
+.footer P {
+   padding: 2.5rem 1rem;
+   color: #fff;
+   font-weight: normal;
+   font-size: 1.2rem;
+}
+
+
+.footer P span {
+    color: #138d75;
+}
+
 /*--- Footer starts --*/
 
-.footer .container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- Old Footer starts --*/
+
+/*.footer .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
@@ -582,11 +654,6 @@ header img{
 .footer .credit span {
     color: #138d75;
 }
-
-
-
-
-
-/*--- Footer close --*/
+/*--- Old Footer close --*/
 
 
