@@ -82,6 +82,14 @@ img {
 .contactpage img{                
     width: 50%;
 }
+.learnmorepage {
+    background: url('/images/iPhone-14-Pro-vs-Galaxy-S23-HQ.png') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+.learnmorepage img{                
+    width: 50%;
+}
 
 .navbar {
     display: flex;
