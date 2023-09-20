@@ -66,12 +66,20 @@ img {
 
 
 /*--------------header start -----------*/
-header {
+.homepage {
     background: url('/images/bg_img.jpg') no-repeat center center/cover;
     min-height: 100vh;
 }
 
-header img{                
+.homepage img{                
+    width: 50%;
+}
+.contactpage {
+    background: url('/images/iPhone-14-Pro-vs-Galaxy-S23-HQ.png') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+.contactpage img{                
     width: 50%;
 }
 
@@ -96,6 +104,8 @@ header img{
     transition: all .4rem ease-in-out;
     text-decoration: none;
 }
+
+
 
 .navbar nav li a:hover {
     color: var(--white_color);
