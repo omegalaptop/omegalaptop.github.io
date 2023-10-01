@@ -33,10 +33,17 @@
         min-width: 100%;
         top: 0;
         right: -100%;
-        background: var(--light_dark);
+        background-color: hsla(0, 0%, 100%, .3);                              
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
         align-items: flex-start;
         justify-content: center;
         transition: all .5s ease-in-out;
+    }
+
+    .navbar nav li a {
+        color: #000;
+        font-weight: bold;
     }
 
 
@@ -55,7 +62,7 @@
     .close_btn {
         position: absolute;
         top: 0;
-        left: 80%;
+        left: 70%;
         margin: 25px;
         color: white;                /*added color black*/
     }
@@ -215,7 +222,7 @@
     .close_btn {
         position: absolute;
         top: 0;
-        left: 80%;
+        left: 70%;
         margin: 25px;
         color: white;                /*added color black*/
     }
